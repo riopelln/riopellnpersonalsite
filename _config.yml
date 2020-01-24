@@ -17,14 +17,13 @@ title: Nathan Riopelle
 email: riopelln@umich.edu
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nriopelle.me" # the base hostname & protocol for your site, e.g. http://example.com
-#repository: riopelln/riopellnpersonalsite
-#twitter_username: jekyllrb
-#github_username:  jekyll
 
 # Build settings
 #markdown: kramdown
 theme: jekyll-theme-tactile
 
+plugins:
+- jekyll-menus
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

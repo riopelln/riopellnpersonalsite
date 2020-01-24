@@ -1,6 +1,10 @@
 ---
 layout: default
+title: Nathan Riopelle
+description: hi!
+menus: header
 ---
+
 
 ## Hi my name is Nathan
 
