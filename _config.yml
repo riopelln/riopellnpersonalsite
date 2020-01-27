@@ -8,7 +8,6 @@ relative_permalinks: false
 
 # Setup
 title:            nathan riopelle
-#tagline:          'A Jekyll theme'
 description:      'undergraduate senior in computer engineering'
 url:              http://nriopelle.me
 baseurl:          /
