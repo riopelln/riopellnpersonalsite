@@ -1,30 +1,16 @@
-# Site settings
-title: nathan riopelle
-email: your-email@domain.com
-url: https://nriopelle.me
-description: "Ph.D. candidate in HCI at Carnegie Mellon University. Passionate maker. Aspiring creative. Lifelong adventurer."
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary-dark: '#000000'
-  links: '#219ab3'
+# Permalinks
+permalink:        pretty
+relative_permalinks: false
 
-# Footer settings
-footer: Your Website
+# Setup
+title:            nathan riopelle
+description:      "ph.d. candidate in human-computer interaction"
+url:              http://nriopelle.me
+baseurl:          /
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+github:
+  repo:           https://github.com/riopelln/riopellnpersonalsite

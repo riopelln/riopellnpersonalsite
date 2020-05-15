@@ -206,7 +206,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.10.3)
+    minitest (5.14.0)
     multipart-post (2.1.1)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
@@ -252,6 +252,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-include-cache
   jekyll-menus
+  jekyll-theme-tactile
 
 BUNDLED WITH
    2.1.4
