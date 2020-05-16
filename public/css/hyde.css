@@ -45,7 +45,6 @@ html {
   }
 }
 
-
 /*
  * Sidebar
  *
@@ -58,6 +57,7 @@ html {
   padding: 2rem 1rem;
   color: rgba(0,0,0,.5);
   background-color: #202020;
+  overscroll-behavior: none;
 }
 @media (min-width: 48em) {
   .sidebar {
