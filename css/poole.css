@@ -306,8 +306,8 @@ tbody tr:nth-child(odd) th {
 
 .row {
   display: flex;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 14rem;
+  margin-right: 14rem;
 }
 
 .column {
