@@ -306,8 +306,6 @@ tbody tr:nth-child(odd) th {
 
 .footer {
   flex-shrink: 0;
-  padding-left: 17rem;
-  padding-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
   font-size: 0.7rem;
