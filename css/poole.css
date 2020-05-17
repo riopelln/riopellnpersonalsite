@@ -304,10 +304,23 @@ tbody tr:nth-child(odd) th {
   overscroll-behavior: none;
 }
 
+.row {
+  display: flex;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.column {
+  flex: 33.33%;
+  width: 100%;
+  padding: 1rem;
+}
+
 .footer {
   flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.5rem;
   font-size: 0.7rem;
   text-align: center;
   line-height: 0em;
