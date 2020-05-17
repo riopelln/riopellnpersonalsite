@@ -57,20 +57,6 @@
   margin-right: auto;
 }
 
- /* Three image containers (use 25% for four, and 50% for two, etc) */
- .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-} 
-
 /* Sidebar links */
 .sidebar a {
   color: #000;
@@ -135,12 +121,10 @@ a.sidebar-nav-item:focus {
 .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
-  overscroll-behavior: none;
 }
 
 @media (min-width: 64em) {
   .content {
-    max-width: 65rem;
     margin-left: 22rem;
     margin-right: 4rem;
   }

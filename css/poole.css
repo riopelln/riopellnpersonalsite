@@ -45,20 +45,30 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  overscroll-behavior: none;
   line-height: 1.5;
+  font-size: 16px;
 }
-@media (min-width: 38em) {
+@media (min-width: 48em) {
   html {
-    font-size: 20px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 18px;
   }
 }
 
+
 body {
+  display: flex;
+  flex-direction: column;
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -286,13 +296,24 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
+  flex: 1 0 auto;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
+  overscroll-behavior: none;
 }
 
+.footer {
+  flex-shrink: 0;
+  padding-left: 17rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 0em;
+}
 
 /*
  * Masthead
