@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="my_jquery_functions.js"></script>
+  <script src="{{ site.baseurl }}/my_jquery_functions.js"></script>
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -28,4 +28,58 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <script>
+    var topRange      = 200,  // measure from the top of the viewport to X pixels down
+      edgeMargin    = 20,   // margin above the top or margin from the end of the page
+      animationTime = 1200, // time in milliseconds
+      contentTop    = [];
+
+    $(document).ready(function(){
+        // Stop animated scroll if the user does something
+        $('html,body').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function(e){
+            if ( e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel' ){
+                $('html,body').stop();
+            }
+        })
+
+        // Animate menu scroll to content
+        $('.sidebar-nav').find('a').click(function(){
+            var sel = this,
+            newTop = Math.min( contentTop[ $('.sidebar-nav a').index( $(this) ) ], $(document).height() - $(window).height() ); // get content top or top position if at the document bottom
+            $('html,body').stop().animate({ 'scrollTop' : newTop }, animationTime, function(){
+                window.location.hash = $(sel).attr('href');
+            });
+            return false;
+        })
+
+        // Set up content an array of locations
+        $('.sidebar-nav').find('a').each(function(){
+            contentTop.push( $( $(this).attr('href') ).offset().top );
+        })
+
+        // adjust side menu
+        $(window).scroll(function(){
+            var winTop = $(window).scrollTop(),
+            bodyHt = $(document).height(),
+            vpHt = $(window).height() + edgeMargin;  // viewport height + margin
+            $.each( contentTop, function(i,loc){
+                if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
+                    $('.sidebar-nav a').removeClass('active').eq(i).addClass('active');
+                }
+            })
+        })
+
+        $(".img_cmu")
+            .mouseover(function() { 
+                var src = $(this).attr("src").match(/[^\.]+/) + "_over.jpg";
+                $(this).attr("src", src).fadeIn(500);
+            })
+            .mouseout(function() {
+                var src = $(this).attr("src").replace("_over.jpg", ".jpg");
+                $(this).attr("src", src).fadeIn(500);
+            });
+    });
+  </script>
 </head>
+

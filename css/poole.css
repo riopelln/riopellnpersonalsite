@@ -49,7 +49,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, Georgia, sans-serif;
   overscroll-behavior: none;
   line-height: 1.5;
   font-size: 16px;
@@ -89,10 +89,10 @@ a strong {
   color: inherit;
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
-a:hover,
+/*a:hover,
 a:focus {
   text-decoration: underline;
-}
+}*/
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -279,6 +279,20 @@ tbody tr:nth-child(odd) th {
 }
 
 
+.row {
+  display: flex;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.column {
+  flex: 33.33%;
+  width: 100%;
+  margin-left: 0em;
+  margin-right: 0em;
+}
+
+
 /*
  * Messages
  *
@@ -311,12 +325,13 @@ tbody tr:nth-child(odd) th {
 
 .row {
   display: flex;
+  max-width: 500px;
 }
 
 .column {
   flex: 33.33%;
   width: 100%;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .footer {
@@ -327,6 +342,17 @@ tbody tr:nth-child(odd) th {
   font-size: 0.7rem;
   text-align: center;
   line-height: 0em;
+}
+
+.image_fade {
+  opacity: 0;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+}
+
+.image_fade:hover {
+  opacity: 1;
 }
 
 /*

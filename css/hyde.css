@@ -52,7 +52,6 @@
 }
 
 .center {
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -79,16 +78,20 @@
 }
 
 /* Sidebar nav */
-.sidebar-nav {
+.sidebar-cv-item {
   margin-bottom: 1rem;
 }
-.sidebar-nav-item {
+.sidebar-nav-item, 
+.sidebar-cv-item {
   display: block;
   font-size: 1.1rem;
   line-height: 1.75;
 }
+
 a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
+a.sidebar-nav-item:focus,
+.sidebar-cv-item:hover,
+.sidebar-cv-item:focus {
   color: rgb(0, 117, 252);
   text-decoration: none;  
 }

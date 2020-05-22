@@ -22,8 +22,9 @@ $(document).ready(function(){
     })*/
 
     // Set up content an array of locations
-    $('.da').find('a').each(function(){
+    $('.sidebar-nav').find('a').each(function(){
         contentTop.push( $( $(this).attr('href') ).offset().top );
+        $(this).addClass('active')
     })
 
     // adjust side menu
@@ -33,7 +34,7 @@ $(document).ready(function(){
         vpHt = $(window).height() + edgeMargin;  // viewport height + margin
         $.each( contentTop, function(i,loc){
             if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
-                $('.da a').removeClass('current').eq(i).addClass('current');
+                $('.sidebar-nav a').removeClass('active').eq(i).addClass('active');
             }
         })
     })
