@@ -40,6 +40,7 @@ description: hi!
 
 ## news ##
 <hr style="margin-top:0;margin-bottom:0.5rem;border-width:thick;border-top: 3px solid red;"> 
+* **May 2020** -- Graduated summa cum laude from the University of Michigan College of Engineering
 * **April 2020** -- Officially committed to begin my Ph.D. at HCII at CMU this fall!
 * **January 2020** -- Website created
 
