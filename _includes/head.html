@@ -58,15 +58,26 @@
             contentTop.push( $( $(this).attr('href') ).offset().top );
         })
 
+        // Made sidebar bold on setup
+        var winTop = $(window).scrollTop(),
+        bodyHt = $(document).height(),
+        vpHt = $(window).height() + edgeMargin;  // viewport height + margin
+        $.each( contentTop, function(i,loc){
+            if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
+              $('.sidebar-nav a').removeClass('active');  
+              $('.sidebar-nav a').eq(i).addClass('active');
+            }
+        })
+
         // adjust side menu
         $(window).scroll(function(){
             var winTop = $(window).scrollTop(),
             bodyHt = $(document).height(),
             vpHt = $(window).height() + edgeMargin;  // viewport height + margin
             $.each( contentTop, function(i,loc){
-                $('.sidebar-nav a').eq(i).removeClass('active');
                 if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
-                    $('.sidebar-nav a').eq(i).addClass('active');
+                  $('.sidebar-nav a').removeClass('active');  
+                  $('.sidebar-nav a').eq(i).addClass('active');
                 }
             })
         })
