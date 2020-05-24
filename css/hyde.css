@@ -90,10 +90,8 @@
 
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus,
-a.sidebar-nav-item:active,
 .sidebar-cv-item:hover,
-.sidebar-cv-item:focus,
-.sidebar-cv-item:active {
+.sidebar-cv-item:focus {
   color: rgb(0, 117, 252);
   text-decoration: none;  
 }

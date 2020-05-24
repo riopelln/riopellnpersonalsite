@@ -351,8 +351,7 @@ tbody tr:nth-child(odd) th {
   -webkit-transition: all .2s ease-in;
 }
 
-.image_fade:hover,
-.image_fade:active {
+.image_fade:hover {
   opacity: 1;
 }
 

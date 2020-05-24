@@ -47,14 +47,14 @@ description: hi!
 
 <h2 id="star_Experience">experience</h2>
 <hr style="margin-top:0;margin-bottom:0.5rem;border-width:thick;border-top: 3px solid dodgerblue;"> 
-<img src="{{ site.baseurl }}assets/stars.jpg" class="center" id="star_Experience"/>
+<img src="{{ site.baseurl }}assets/stars.jpg" class="center"/>
 <br/>
 
 <h2 id="star_Projects">projects</h2>
 <hr style="margin-top:0;margin-bottom:0.5rem;border-width:thick;border-top: 3px solid forestgreen;"> 
-<img src="{{ site.baseurl }}assets/stars.jpg" class="center" id="star_Projects"/>
+<img src="{{ site.baseurl }}assets/stars.jpg" class="center"/>
 <br/>
 
 <h2 id="star_Publications">publications</h2>
 <hr style="margin-top:0;margin-bottom:0.5rem;border-width:thick;border-top: 3px solid gold;"> 
-<img src="{{ site.baseurl }}assets/stars.jpg" class="center" id="star_Publications"/>
+<img src="{{ site.baseurl }}assets/stars.jpg" class="center"/>
