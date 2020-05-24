@@ -64,8 +64,9 @@
             bodyHt = $(document).height(),
             vpHt = $(window).height() + edgeMargin;  // viewport height + margin
             $.each( contentTop, function(i,loc){
+                $('.sidebar-nav a').eq(i).removeClass('active');
                 if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
-                    $('.sidebar-nav a').removeClass('active').eq(i).addClass('active');
+                    $('.sidebar-nav a').eq(i).addClass('active');
                 }
             })
         })
