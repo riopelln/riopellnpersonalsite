@@ -356,6 +356,10 @@ tbody tr:nth-child(odd) th {
   opacity: 1;
 }
 
+.col_container {
+  position: relative;
+}
+
 /*
  * Masthead
  *

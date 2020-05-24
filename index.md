@@ -11,7 +11,7 @@ description: hi!
 <!--<img src="{{ site.baseurl }}assets/logos.jpg" class="center" style="max-width: 400px;"/>-->
 <div class="row center" style="margin-bottom: 4rem">
     <div class="column">
-        <div style="position: relative;">
+        <div class="col_container">
             <a target="_blank" rel="noopener noreferrer" href="https://cse.engin.umich.edu/" >
                 <img src="{{ site.baseurl }}assets/mich_logo.png" style="position: absolute; z-index: 1;"/> 
                 <img src="{{ site.baseurl }}assets/mich_logo_over.png" class="image_fade" style="position: absolute; z-index: 2;"/>
@@ -19,7 +19,7 @@ description: hi!
         </div>
     </div>
     <div class="column">
-        <div style="position: relative;">
+        <div class="col_container">
             <a target="_blank" rel="noopener noreferrer" href="https://www.cs.cmu.edu/" >
                 <img src="{{ site.baseurl }}assets/cmu_logo.jpg" style="position: absolute; z-index: 1;"/> 
                 <img src="{{ site.baseurl }}assets/cmu_logo_over.jpg" class="image_fade" style="position: absolute; z-index: 2;"/>
@@ -27,7 +27,7 @@ description: hi!
         </div>
     </div>
     <div class="column">
-        <div style="position: relative;">
+        <div class="col_container">
             <a target="_blank" rel="noopener noreferrer" href="https://www.hcii.cmu.edu/" >
                 <img src="{{ site.baseurl }}assets/hci_logo.png" style="position: absolute; z-index: 1;"/> 
                 <img src="{{ site.baseurl }}assets/hci_logo_over.png" class="image_fade" style="position: absolute; z-index: 2;"/>
@@ -42,7 +42,6 @@ description: hi!
 <hr style="margin-top:0;margin-bottom:0.5rem;border-width:thick;border-top: 3px solid red;"> 
 * **May 2020** -- Graduated summa cum laude from the University of Michigan College of Engineering
 * **April 2020** -- Officially committed to begin my Ph.D. at HCII at CMU this fall!
-* **January 2020** -- Website created
 
 <br/>
 
