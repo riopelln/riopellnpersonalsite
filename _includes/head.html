@@ -30,7 +30,7 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
   <script>
-    var topRange      = 600,  // measure from the top of the viewport to X pixels down
+    var topRange      = 200,  // measure from the top of the viewport to X pixels down
       edgeMargin    = 20,   // margin above the top or margin from the end of the page
       animationTime = 1200, // time in milliseconds
       contentTop    = [];
@@ -74,9 +74,9 @@
             var winTop = $(window).scrollTop(),
             bodyHt = $(document).height(),
             vpHt = $(window).height() + edgeMargin;  // viewport height + margin
-            $('.sidebar-nav a').removeClass('active'); 
             $.each( contentTop, function(i,loc){
                 if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){ 
+                  $('.sidebar-nav a .active').removeClass('active'); 
                   $('.sidebar-nav a').eq(i).addClass('active');
                 }
             })
