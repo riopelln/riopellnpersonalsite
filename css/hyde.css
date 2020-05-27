@@ -67,7 +67,7 @@
   color: #000;
   margin-top: 0;
   font-family: "Helvetica";
-  letter-spacing: -2.5px;
+  letter-spacing: -2px;
   font-size: 2.9rem;
   margin-bottom: 1.5rem;
 }
@@ -78,7 +78,7 @@
 }
 
 /* Sidebar nav */
-.sidebar-cv-item {
+.sidebar-cv-item-bottom {
   margin-bottom: 1rem;
 }
 .sidebar-nav-item, 
@@ -97,6 +97,16 @@ a.sidebar-nav-item:focus,
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+
+.sidebar-icon,
+.sidebar-icon-top {
+  width: 1.1rem;
+  color: black;
+}
+
+.sidebar-icon-top {
+  padding-top: 1.5rem; 
 }
 
 /* Sticky sidebar
