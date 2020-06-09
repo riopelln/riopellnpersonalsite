@@ -48,7 +48,9 @@ description: hi!
 <h2 id="research">research</h2>
 <hr style="margin-top:0;margin-bottom:0.5rem;border-width:thick;border-top: 3px solid dodgerblue;"> 
 <br/>
+_rebuilding this section, check back soon!_
 
 <h2 id="projects">projects</h2>
 <hr style="margin-top:0;margin-bottom:0.5rem;border-width:thick;border-top: 3px solid forestgreen;"> 
 <br/>
+_rebuilding this section, check back soon!_
