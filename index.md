@@ -6,7 +6,7 @@ description: hi!
 
 <img src="{{ site.baseurl }}assets/propic80.jpg" class="center" id="about"/>
 
-**Hi, my name is Nathan.** I am an incoming Ph.D. candidate at the Human-Computer Interaction Institute at Carnegie Mellon University and a recent alum of the Electrical and Computer Engineering program at the University of Michigan. In short, my research interests involve the discovery and development of novel interaction technologies. To enable these technologies, I am particularly interested in the investigation of new or unorthodox hardware techniques for sensing and interfacing, and the creation of their associated software interfaces. Domains I am currently interested in exploring include activity recognition, health sensing, and virtual/augmented reality (XR).
+**Hi, my name is Nathan.** I am a first-year Ph.D. student at the Human-Computer Interaction Institute at Carnegie Mellon University. My research interests involve designing the next generation of interactive hardware technologies to address existing limitations in performance, capability, and usability. New interfaces should not just fix the shortcomings reported by users of current ones but also enable previously impossible and delightful forms of interaction. End-application domains I touch upon include smart environments, AR/VR, and mobile health.
 
 <!--<img src="{{ site.baseurl }}assets/logos.jpg" class="center" style="max-width: 400px;"/>-->
 <div class="row center" style="margin-bottom: 4rem">
@@ -40,6 +40,8 @@ description: hi!
 
 ## news ##
 <hr style="margin-top:0;margin-bottom:0.5rem;border-width:thick;border-top: 3px solid red;"> 
+
+* **September 2020** -- Moved to Pittsburgh and started my Ph.D. at CMU
 * **May 2020** -- Graduated summa cum laude from the University of Michigan College of Engineering
 * **April 2020** -- Officially committed to begin my Ph.D. at HCII at CMU this fall!
 
